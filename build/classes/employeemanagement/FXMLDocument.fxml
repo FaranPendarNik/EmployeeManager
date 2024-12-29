@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="489.0" prefWidth="729.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="employeemanagement.FXMLDocumentController">
+   <children>
+      <ImageView blendMode="MULTIPLY" fitHeight="540.0" fitWidth="731.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../photo/1003232l.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnEmpoleeManager" layoutX="177.0" layoutY="282.0" onAction="#AddEmployee" text="ثبت کارمند جدید" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="B Morvarid" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnSearch" layoutX="427.0" layoutY="282.0" onAction="#Search" text="جستجو" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="B Morvarid" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnPension" layoutX="203.0" layoutY="335.0" onAction="#Pension" text="مستمری" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="B Morvarid" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="209.0" layoutY="391.0" text="کسری" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="B Morvarid" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdateSalary" layoutX="405.0" layoutY="335.0" onAction="#UpdateSalary" text="بروزرسانی حقوق" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="B Morvarid" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="427.0" layoutY="391.0" text="پرداخت" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="B Morvarid" size="17.0" />
+         </font>
+      </JFXButton>
+      <MenuBar fx:id="menuBar" blendMode="MULTIPLY" layoutY="2.0" prefHeight="25.0" prefWidth="731.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="گزارش ها">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="حسابرس">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="درباره ما">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <ImageView blendMode="MULTIPLY" fitHeight="25.0" fitWidth="25.0" layoutX="15.0" layoutY="449.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../photo/back.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnBack" alignment="CENTER" blendMode="MULTIPLY" buttonType="RAISED" contentDisplay="CENTER" layoutX="15.0" layoutY="449.0" onAction="#backScene" prefHeight="25.0" prefWidth="25.0" ripplerFill="RED" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="489.0" prefWidth="729.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="employeemanagement.AddEmpoleeController">
+   <children>
+      <ImageView fitHeight="489.0" fitWidth="729.0" layoutY="2.0" opacity="0.26" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../photo/332.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtLastName" alignment="CENTER" blendMode="MULTIPLY" layoutX="32.0" layoutY="61.0" promptText="نام خانوادگی" />
+      <TextField fx:id="txtFirstName" alignment="CENTER" blendMode="MULTIPLY" layoutX="199.0" layoutY="61.0" promptText="نام" />
+      <TextField fx:id="txtCodeMeli" alignment="CENTER" blendMode="MULTIPLY" layoutX="117.0" layoutY="100.0" promptText="کد ملی" />
+      <TextField fx:id="txtPosition" alignment="CENTER" blendMode="MULTIPLY" layoutX="117.0" layoutY="219.0" promptText="عنوان پست سازمانی" />
+      <DatePicker fx:id="pickerBirthday" blendMode="MULTIPLY" layoutX="117.0" layoutY="138.0" prefHeight="25.0" prefWidth="150.0" promptText="تاریخ تولد" />
+      <JFXRadioButton fx:id="togMen" layoutX="117.0" layoutY="183.0" onAction="#toggleMen" text="مرد" />
+      <JFXRadioButton fx:id="togWomen" layoutX="179.0" layoutY="183.0" onAction="#toggleWomen" text="زن" />
+      <Label layoutX="228.0" layoutY="183.0" text="جنسیت : " />
+      <TextField fx:id="txtMother" alignment="CENTER" blendMode="MULTIPLY" layoutX="32.0" layoutY="258.0" promptText="نام مادر" />
+      <TextField fx:id="txtFather" alignment="CENTER" blendMode="MULTIPLY" layoutX="199.0" layoutY="258.0" promptText="نام پدر" />
+      <TextField fx:id="txtMobile" alignment="CENTER" blendMode="MULTIPLY" layoutX="117.0" layoutY="336.0" promptText="شماره موبایل" />
+      <TextField fx:id="txtAddress" alignment="CENTER" blendMode="MULTIPLY" layoutX="29.0" layoutY="376.0" prefHeight="25.0" prefWidth="321.0" promptText="آدرس" />
+      <TextField fx:id="txtPostCode" alignment="CENTER" blendMode="MULTIPLY" layoutX="117.0" layoutY="424.0" promptText="کد پستی" />
+      <ImageView fx:id="IVphoto" fitHeight="169.0" fitWidth="142.0" layoutX="484.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" blendMode="MULTIPLY" fill="WHITE" height="169.0" layoutX="484.0" layoutY="54.0" stroke="BLACK" strokeType="INSIDE" width="142.0" />
+      <JFXButton fx:id="btnSave" alignment="CENTER" blendMode="MULTIPLY" buttonType="RAISED" contentDisplay="CENTER" layoutX="509.0" layoutY="385.0" onAction="#save" ripplerFill="#32bf53" text="ثبت اطلاعات" textAlignment="CENTER">
+         <font>
+            <Font name="B Morvarid" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnClear" buttonType="RAISED" layoutX="491.0" layoutY="430.0" onAction="#Clear" ripplerFill="#bf3a32" text="پاک کردن اطلاعات">
+         <font>
+            <Font name="B Morvarid" size="17.0" />
+         </font>
+      </JFXButton>
+      <DatePicker fx:id="txtDateEmployment" blendMode="MULTIPLY" layoutX="480.0" layoutY="258.0" prefHeight="25.0" prefWidth="150.0" promptText="تاریخ استخدام" />
+      <TextField fx:id="txtSalary" alignment="CENTER" blendMode="MULTIPLY" layoutX="481.0" layoutY="303.0" promptText="حقوق پایه" />
+      <JFXToggleButton fx:id="toggleRelationShip" layoutX="154.0" layoutY="281.0" selected="true" text="متاهل" unToggleColor="#ddc0c0" unToggleLineColor="RED">
+         <font>
+            <Font name="B Morvarid" size="17.0" />
+         </font>
+      </JFXToggleButton>
+      <Label layoutX="126.0" layoutY="300.0" text="مجرد">
+         <font>
+            <Font name="B Morvarid" size="17.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnGetPhoto" alignment="CENTER" blendMode="MULTIPLY" layoutX="484.0" layoutY="54.0" onAction="#GetPhoto" prefHeight="169.0" prefWidth="142.0" text="+" textAlignment="CENTER">
+         <font>
+            <Font size="67.0" />
+         </font>
+      </JFXButton>
+      <JFXToggleButton fx:id="togAccess" layoutX="492.0" layoutY="330.0" selected="true" text="Admin" unToggleColor="#ddc0c0" unToggleLineColor="RED">
+         <font>
+            <Font name="B Morvarid" size="17.0" />
+         </font>
+      </JFXToggleButton>
+      <ImageView blendMode="MULTIPLY" fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="452.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../photo/back.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnBack" alignment="CENTER" blendMode="MULTIPLY" buttonType="RAISED" contentDisplay="CENTER" layoutX="14.0" layoutY="451.0" onAction="#backScene" prefHeight="25.0" prefWidth="25.0" ripplerFill="#b52828" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

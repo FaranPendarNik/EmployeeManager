@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="489.0" prefWidth="729.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="employeemanagement.ShowInfoEmployeeController">
+   <children>
+      <ImageView fitHeight="489.0" fitWidth="729.0" opacity="0.08" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../photo/123.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgPhoto" fitHeight="169.0" fitWidth="142.0" layoutX="519.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="lblLastName" alignment="CENTER" contentDisplay="CENTER" layoutX="223.0" layoutY="125.0" prefHeight="36.0" prefWidth="142.0" textAlignment="CENTER" textFill="ROYALBLUE">
+         <font>
+            <Font name="B Morvarid" size="17.0" />
+         </font></Label>
+      <Label fx:id="lblFirstName" alignment="CENTER" contentDisplay="CENTER" layoutX="48.0" layoutY="125.0" prefHeight="36.0" prefWidth="142.0" textAlignment="CENTER" textFill="ROYALBLUE">
+         <font>
+            <Font name="B Morvarid" size="17.0" />
+         </font></Label>
+      <Label fx:id="lblCodeMeli" alignment="CENTER" contentDisplay="CENTER" layoutX="135.0" layoutY="181.0" prefHeight="36.0" prefWidth="142.0" textAlignment="CENTER" textFill="ROYALBLUE">
+         <font>
+            <Font name="B Morvarid" size="17.0" />
+         </font></Label>
+      <Label fx:id="lblDateBirthday" alignment="CENTER" contentDisplay="CENTER" layoutX="135.0" layoutY="232.0" prefHeight="36.0" prefWidth="142.0" textAlignment="CENTER" textFill="ROYALBLUE">
+         <font>
+            <Font name="B Morvarid" size="17.0" />
+         </font></Label>
+      <Label fx:id="lblPosition" alignment="CENTER" contentDisplay="CENTER" layoutX="135.0" layoutY="283.0" prefHeight="36.0" prefWidth="142.0" textAlignment="CENTER" textFill="ROYALBLUE">
+         <font>
+            <Font name="B Morvarid" size="17.0" />
+         </font></Label>
+      <Label fx:id="lblFatherName" alignment="CENTER" contentDisplay="CENTER" layoutX="223.0" layoutY="341.0" prefHeight="36.0" prefWidth="142.0" textAlignment="CENTER" textFill="ROYALBLUE">
+         <font>
+            <Font name="B Morvarid" size="17.0" />
+         </font></Label>
+      <Label fx:id="lblMotherName" alignment="CENTER" contentDisplay="CENTER" layoutX="48.0" layoutY="341.0" prefHeight="36.0" prefWidth="142.0" textAlignment="CENTER" textFill="ROYALBLUE">
+         <font>
+            <Font name="B Morvarid" size="17.0" />
+         </font></Label>
+      <Label fx:id="lblAddress" alignment="CENTER" contentDisplay="CENTER" layoutX="46.0" layoutY="394.0" prefHeight="36.0" prefWidth="318.0" textAlignment="CENTER" textFill="ROYALBLUE">
+         <font>
+            <Font name="B Morvarid" size="17.0" />
+         </font></Label>
+      <Label fx:id="lblPostCode" alignment="CENTER" contentDisplay="CENTER" layoutX="135.0" layoutY="439.0" prefHeight="36.0" prefWidth="142.0" textAlignment="CENTER" textFill="ROYALBLUE">
+         <font>
+            <Font name="B Morvarid" size="17.0" />
+         </font></Label>
+      <TextField fx:id="txtSearch" alignment="CENTER" blendMode="MULTIPLY" layoutX="48.0" layoutY="51.0" prefHeight="36.0" prefWidth="149.0" promptText="کد ملی کارمند" />
+      <ImageView blendMode="MULTIPLY" fitHeight="49.0" fitWidth="36.0" layoutX="206.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../photo/search.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnSearch" layoutX="206.0" layoutY="51.0" onAction="#EmployeeSearch" prefHeight="36.0" prefWidth="36.0" />
+      <Label fx:id="lblDateEmployment" alignment="CENTER" contentDisplay="CENTER" layoutX="519.0" layoutY="283.0" prefHeight="36.0" prefWidth="142.0" textAlignment="CENTER" textFill="ROYALBLUE">
+         <font>
+            <Font name="B Morvarid" size="17.0" />
+         </font></Label>
+      <Label fx:id="lblSalary" alignment="CENTER" contentDisplay="CENTER" layoutX="519.0" layoutY="341.0" prefHeight="36.0" prefWidth="142.0" textAlignment="CENTER" textFill="ROYALBLUE">
+         <font>
+            <Font name="B Morvarid" size="17.0" />
+         </font></Label>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="450.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../photo/back.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnBack" alignment="CENTER" blendMode="MULTIPLY" buttonType="RAISED" contentDisplay="CENTER" layoutX="13.0" layoutY="450.0" onAction="#backScene" prefHeight="25.0" prefWidth="25.0" ripplerFill="#e11010" textAlignment="CENTER" />
+      <Label fx:id="T1" alignment="CENTER" contentDisplay="CENTER" layoutX="192.0" layoutY="125.0" prefHeight="36.0" prefWidth="28.0" text="نام" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="B Morvarid" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="T2" alignment="CENTER" contentDisplay="CENTER" layoutX="373.0" layoutY="125.0" prefHeight="36.0" prefWidth="81.0" text="نام خانوادگی" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="B Morvarid" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="T3" alignment="CENTER" contentDisplay="CENTER" layoutX="277.0" layoutY="181.0" prefHeight="36.0" prefWidth="81.0" text="کدملی" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="B Morvarid" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="T4" alignment="CENTER" contentDisplay="CENTER" layoutX="277.0" layoutY="232.0" prefHeight="36.0" prefWidth="81.0" text="تاریخ تولد" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="B Morvarid" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="T5" alignment="CENTER" contentDisplay="CENTER" layoutX="277.0" layoutY="283.0" prefHeight="36.0" prefWidth="81.0" text="سمت" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="B Morvarid" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="T6" alignment="CENTER" contentDisplay="CENTER" layoutX="191.0" layoutY="341.0" prefHeight="36.0" prefWidth="36.0" text="مادر" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="B Morvarid" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="T7" alignment="CENTER" contentDisplay="CENTER" layoutX="365.0" layoutY="341.0" prefHeight="36.0" prefWidth="36.0" text="پدر" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="B Morvarid" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="T8" alignment="CENTER" contentDisplay="CENTER" layoutX="365.0" layoutY="394.0" prefHeight="36.0" prefWidth="48.0" text="آدرس" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="B Morvarid" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="T9" alignment="CENTER" contentDisplay="CENTER" layoutX="277.0" layoutY="439.0" prefHeight="36.0" prefWidth="81.0" text="کدپستی" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="B Morvarid" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="T10" alignment="CENTER" contentDisplay="CENTER" layoutX="661.0" layoutY="283.0" prefHeight="36.0" prefWidth="59.0" text="استخدام" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="B Morvarid" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="T11" alignment="CENTER" contentDisplay="CENTER" layoutX="661.0" layoutY="341.0" prefHeight="36.0" prefWidth="59.0" text="حقوق" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="B Morvarid" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
